@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!--<!DOCTYPE html>태그는 관용적으로 이 문서가 html로 만들어졌다는 의미를 나타낸다. <html><!html>위에 약속처럼 그냥 적어준다.-->
+<html><!--모든 태그는 html태그 안에 묶이게 되는데 안묶여도 동작은 하지만 약속처럼 넣어주는게 좋다.-->
+    <head><!--head는 body를 설명하는 태그로 이는 html에 대한 하나의 약속임-->
+        <!--
+            <title></title>은 웹브라우저를 통해 열었을 때, 페이지 제목을 설정함
+            <meta>는 페이지를 열 때 설정을 제어가능, charset='utf-8'은 페이지를 열 때 문자셋을 utf-8로 설정함
+        -->
+        <title>조금씩 채워넣는 html 공부내용</title>
+        <meta charset="utf-8">
+        <!--
+            <table></table>은 표를 만드는 태그다.
+            <tr></tr>을 이용해 row를 만들고 그 안에
+            <td></td>를 이용해 컴포넌트를 하나 씩 넣기 가능
+        -->
+    </head>
+    <body><!--body는 본문의 내용을 넣는 태그로 이는 html에 대한 하나의 약속임-->
+        <table>
+            <tr>
+                <td>감자</td>
+                <td>12kg</td>
+            </tr>
+            <tr>
+                <td>고구마</td>
+                <td>6kg</td>
+            </tr>
+            <tr>
+                <td>단호박</td>
+                <td>6kg</td>
+            </tr>
+            <tr>
+                <td>컬리플라워</td>
+                <td>500g</td>
+            </tr>
+        </table>
+        
+        <!--
+            <li></li>는 리스트를 만든다.
+            <ul></ul>은 li의 부모 태그로, li로 만든 태그들이 어디서 어디까지 연관되어있는지 구분 해준다.
+            <ol></ol>은 ul과 같지만 순서를 표시함. (ordered list와 unordered list의 차이)
+        -->
+        <h1>WEB</h1>
+        <ul> <!--각각의 목록에 <a></a>태그를 이용해 링크를 달아보자-->
+            <li><a href="1_html.html" target="_blank">HTML</a></li>
+            <li><a href="1_css.html" target="_blank">CSS</a></li>
+            <li><a href="1_javascript.html" target="_blank">JavaScript</a></li>
+        </ul>
+        <ol>
+            <li>whale</li>
+            <li>shark</li>
+            <li>Yeeeeah</li>
+        </ol>
+        
+        <h2>HTML</h2>
+        
+        <!--
+            <strong></strong> 태그는 강조
+            <u></u> 태그는 underline(밑줄)
+            <br> 태그는 줄바꿈
+            <p></p> 태그는 단락 나누기, br과 생긴건 비슷하지만 엄연히 다름
+            <img>는 이미지를 넣는 태그, src=""를 통해 경로를 설정
+            <a></a>는 하이퍼링크를 건다. href를 이용해 주소를 설정한다.
+                target="_blank"는 새 탭에 열게 해준다. (없으면 현재 탭에서 이동)
+                title=""는 마우스를 올려 보이는 툴팁을 정해준다
+        -->
+        <p>
+            <a href="./">링크 테스트</a> <!--웹에 pc의 다이렉토리가 열림-->
+        </p>
+        <p>
+            <a href="https://www.w3.org/TR/html5/" target="_blank" title="test tooltip">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.<br>
+            Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages.<br>
+            HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.<br>
+        </p>
+        <img
+            src="./MyBackground.png"
+            width="100%x"
+        >
+        <!--이미지를 넣는 태그-->
+        <!--width="100px"으로 하면 100px크기 고정, 100%하면 C#처럼 확대적용해서 크기 계속 바뀜-->
+        <!--다음 사이트에서 무료그림을 다운받기 가능 https://unsplash.com -->
+        
+        <p
+            style="margin-top:40px"
+        >
+        <!--맞보기 CSS : margin-top속성으로 위 단락과 거리를 띄어봄-->
+            HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page.<br>
+            It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.<br>
+            HTML elements are delineated by tags, written using angle brackets.<br>
+        </p>
+        
+        
+        
+        <!--
+            h1~h6은 제목태크, 숫자는 작을수록 중요도가 높다 (크고 굵게 나옴)
+        -->
+        <h1>W3C</h1>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+    </body>
+</html>
